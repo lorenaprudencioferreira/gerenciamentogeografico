@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    display: grid;
+    grid-template-areas:
+        "a ca ca"
+        "a con con"
+        "a r r";
+    grid-template-columns: 200px auto auto;
+    grid-template-rows: 45px 551px 45px;
+}
+
+.cabecalho {
+    background-color: #04C9F4;
+    color: #FFFFFF;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    grid-area: ca;
+    font-size: 14px;
+    padding: 20px;
+}
+
+.arealateral {
+    background-color: #D9D9D9;
+    grid-area: a;
+}
+
+.conteudoprincipal {
+    grid-area: con;
+    display: flex;
+    background-color: #FEFBFB;
+}
+
+.rodape {
+    grid-area: r;
+    background-color: #FFFFFF;
+    color: #04C9F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.homecadastro {
+    background-color: #D9D9D9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    border-top: 1px solid #FFFFFF;
+    height: 29px;
+    font-size: 14px;
+}
+
+.botaos {
+    display: flex;
+    background-color: #04C9F4;
+    border-top: 1px solid #FFFFFF;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 29px;
+    font-size: 14px;
+}
+
+.homecadastro :hover {
+    color: black;
+}
+
+.botaos :hover {
+    color: black;
+}
+
+.caixa{
+    width: 560px;
+    height: 260px;
+    background-color: #D9D9D9;
+    margin: 10px;
+    padding: 4px;
+}
+
+.caixa_input{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.caixa_input input{
+    width: 100%;
+    height: 44px;
+}
+
+.classe_senha{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.classe_senha input{
+    width: 100%;
+    height: 44px;
+}
+
+.caixa1{
+    width: 20%;
+}
+
+.caixa1 input{
+    display: flex;
+    flex-direction: column;
+    height: 44px;
+    width: 100%;
+}
+
+.caixa2{
+    width: 80%;
+}
+
+.caixa2 input{
+    display: flex;
+    flex-direction: column;
+    height: 44px;
+    width: 100%;
+}
+
+.botoes{
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    
+}
+
+#buscar{
+    width: 120px;
+    height: 40px;
+    padding: 8px;
+    background-color: #04C9F4;
+    color: #FFFFFF;
+    border: none;
+
+}
+
+#excluir{
+    width: 120px;
+    height: 40px;
+    padding: 8px;
+    background-color: red;
+    color: #FFFFFF;
+    border: none;
+}
+
+#cancelar{
+    width: 120px;
+    height: 40px;
+    padding: 8px;
+    background-color: #FFFFFF;
+    color: #04C9F4;
+    border: none;
+}
+
+#salvar{
+    width: 120px;
+    height: 40px;
+    padding: 8px;
+    background-color: #04C9F4;
+    color: #FFFFFF;
+    border: none;
+}
+input{
+    color: black;
+}
+
+@media screen and (max-width: 780px){
+    body{
+        grid-template-areas: 
+        "ca ca ca"
+        "a  a  a "
+        "con  con con"
+        "r   r   r";
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto 90vh auto;
+    }
+
+    .arealateral a{
+        justify-content: center;
+    }
+}
